@@ -111,6 +111,17 @@ class Mailer extends BaseMailer
     }
 
     /**
+     * @param $param
+     * @return null
+     */
+    private function _getDefault($param)
+    {
+        return isset($this->defaultTemplates[$this->typeLetter][$param])
+            ? $this->defaultTemplates[$this->typeLetter][$param]
+            : null;
+    }
+
+    /**
      * @return void
      */
     private function _setTemplate()
@@ -133,16 +144,5 @@ class Mailer extends BaseMailer
     private function _setSubject()
     {
         $this->subject = isset($this->data['subject']) ? $this->data['subject'] : $this->_getSubject();
-    }
-
-    /**
-     * @param $param
-     * @return null
-     */
-    private function _getDefault($param)
-    {
-        return isset($this->defaultTemplates[$this->typeLetter][$param])
-            ? $this->defaultTemplates[$this->typeLetter][$param]
-            : null;
     }
 }
