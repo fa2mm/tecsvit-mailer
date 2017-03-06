@@ -1,0 +1,28 @@
+{
+    "name": "tecsvit/yii2-mailer",
+    "description": "Mailer for Yii2",
+    "version": "1.0.0",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","mailer"],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Tecsvit",
+            "email": "2day@ua.fm"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "\\app\\components\\": ""
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
