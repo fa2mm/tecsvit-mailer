@@ -1,6 +1,6 @@
 <?php
 
-namespace app\components;
+namespace tecsvit\mailer\components;
 
 use \yii\console\Exception as ExceptionConsole;
 use \yii\swiftmailer\Mailer as BaseMailer;

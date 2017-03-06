@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "\\app\\components\\": ""
+            "\\tecsvit\\mailer\\": ""
         }
     },
     "extra": {
