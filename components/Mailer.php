@@ -45,10 +45,9 @@ class Mailer extends BaseMailer
      */
     public function init()
     {
-        $this->useFileTransport = YII_ENV !== YII_ENV_PROD;
         parent::init();
 
-        if(empty($this->defaultTemplates)) {
+        if (empty($this->defaultTemplates)) {
             throw new ExceptionConsole('Config is invalid.');
         }
     }
